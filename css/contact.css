@@ -256,6 +256,20 @@ body {
 }
 
 
+#thank-you-message {
+  display: none;
+}
+
+button:focus {
+  background-color: green;
+  color: white;
+}
+
+button:focus~#thank-you-message {
+  display: block;
+}
+
+
 /* Flip animation */
 
 .flip {
