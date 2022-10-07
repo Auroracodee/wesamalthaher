@@ -1,3 +1,8 @@
+function form_success() {
+  document.getElementById("myform").submit();
+  document.getElementById("submit").innerHTML = "Sent!";
+}
+
 function goodbye(e) {
     if (!e) e = window.event;
     //e.cancelBubble is supported by IE - this will kill the bubbling process.
