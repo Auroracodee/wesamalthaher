@@ -315,3 +315,10 @@ input[name=button] {
     text-align: center;
     align-items: center;
 }
+
+/*add responsive web-design for flexbox*/
+@media screen and (max-width: 575px) {
+  #main {
+    flex-direction: column;
+  }
+}
