@@ -23,8 +23,21 @@ function isNumberKey(evt) {
 var today = new Date().toISOString().split('T')[0];
 document.getElementsByName("setTodaysDate")[0].setAttribute('min', today);
 
-function handle_form_submission()
-{
-  alert('Submit button pressed');
-  return false; 
-}
+
+
+form.addEventListener('submit', (e) => {
+    let myForm = document.getElementById("#myform");
+let submitButton = document.getElementById("#submit");
+
+if (myForm.requestSubmit) {
+    if (submitButton) {
+        myForm.requestSubmit(submitButton);
+    } else {
+        myForm.requestSubmit();
+    }
+} else {
+    myForm.submit(alert("Form Successfully Completed"));
+    return true;
+    }
+    e.preventDefault();
+})
