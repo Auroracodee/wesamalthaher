@@ -1,8 +1,3 @@
-function handle_form_submission()
-{
-  alert('Form submitted successfully');
-  return true;
-}
 
 
 function isNumberKey(evt) {
