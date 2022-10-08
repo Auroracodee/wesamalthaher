@@ -1,7 +1,9 @@
-function form_success() {
-  document.getElementById("myform").submit();
-  document.getElementById("submit").innerHTML = "Sent!";
-} 
+function handle_form_submission()
+{
+  alert('Form submitted successfully');
+  return true;
+}
+
 
 function isNumberKey(evt) {
     var charCode = (evt.which) ? evt.which : evt.keyCode
