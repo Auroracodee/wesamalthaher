@@ -1,14 +1,11 @@
 function form_success() {
   document.getElementById("myform").submit();
   document.getElementById("submit").innerHTML = "Sent!";
-}
-
-function goodbye(e) {
+} else{
+  function goodbye(e) {
     if (!e) e = window.event;
-    //e.cancelBubble is supported by IE - this will kill the bubbling process.
     e.cancelBubble = true;
-    e.returnValue = 'You sure you want to leave?'; //This is displayed on the dialog
-
+    e.returnValue = 'Are you sure you want to leave?'; 
     //e.stopPropagation works in Firefox.
     if (e.stopPropagation) {
         e.stopPropagation();
