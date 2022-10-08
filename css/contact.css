@@ -318,7 +318,7 @@ input[name=button] {
 
 /*add responsive web-design for flexbox*/
 @media screen and (max-width: 575px) {
-  #main {
+  .flex {
     flex-direction: column;
   }
 }
